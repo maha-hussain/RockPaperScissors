@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+
+    <title>Rock Paper Scissors!</title>
+  </head>
+  <body>
+    <!-- title div-->
+    <div class="gametitle">
+      <h1>Rock Paper Scissors</h1>
+    </div>
+
+    <!-- div containing sPoints, cCircle and pPoints-->
+
+    <div class="flex-container">
+      <!-- system points div-->
+      <div class="sPoints">
+        <h2>system:</h2>
+        <h3 id="systemPoints">0</h3>
+        <h3>pts</h3>
+      </div>
+
+      <!-- changing circle div-->
+      <div class="mainCircle">
+        <div class="cCircle">
+          <script src="script.js"></script>
+        </div>
+      </div>
+
+      <!-- player points div-->
+      <div class="pPoints">
+        <h2>player:</h2>
+        <h3 id="playerPoints">0</h3>
+        <h3>pts</h3>
+      </div>
+    </div>
+
+    <div class="options">
+      <!-- options div -->
+      <div class="circles">
+        <div class="c1" onclick="chooseOption('rock')"></div>
+        <div class="c2" onclick="chooseOption('paper')"></div>
+        <div class="c3" onclick="chooseOption('scissors')"></div>
+      </div>
+    </div>
+    <!-- reset score div-->
+    <div class="reset">
+      <div>
+        <h2>reset score?</h2>
+        <button id="resetButton" onclick="resetFunction()">
+          <img src="loop.png" alt="a reset button icon"/>
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+    <h4> icons sourced by <a href="www.flaticon.com">flaticon</a></h4>
+  </div>
+
+  </body>
+</html>

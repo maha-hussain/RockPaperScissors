@@ -1,0 +1,134 @@
+/* Overall styling */
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #a7cfcf;
+  font-family: "Shippori Antique", sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+
+}
+
+
+/* Title styling*/
+.gametitle h1 {
+  font-size: 3.125vw;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5vw;
+}
+
+/* Points styling*/ 
+.sPoints h2, .pPoints h2 {
+  font-size: 3vw;
+}
+
+.sPoints h3, .pPoints h3 {
+  font-size: 2vw;
+}
+
+/* Centering the div containing the changing circle*/
+.mainCircle {
+  text-align: center;
+}
+
+/* Changing Circle styling*/
+.cCircle {
+  height: 20vw;
+  width: 20vw;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reset {
+  margin-top: 2vh;
+  align-items: center;
+  font-size: 1.5vw;
+  margin-bottom: 2vh;
+  padding: 10px;
+}
+
+.reset button img{
+  width: 0;
+  height: 0;
+}
+
+#resetButton{
+  height: 5vw;
+  width: 5vw;
+  background-image: url("loop.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+} 
+
+body h4{
+  margin-top: 2vh;
+  font-size: 1vw;
+}
+/* Centering 3 smaller circles*/
+.circles {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 40px;
+}
+
+/* Options styling */
+.c1,
+.c2,
+.c3 {
+  height: 10vw;
+  width: 10vw;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 3vw;
+}
+
+/* Option Image styling */
+.c1 {
+  background-image: url("rock.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c2 {
+  background-image: url("paper.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c3 {
+  background-image: url("scissors.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Circle hover state*/
+.c1:hover, .c2:hover, .c3:hover {
+  box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+
+
+
